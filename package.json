@@ -1,0 +1,25 @@
+{
+  "name": "prettier-config-halo-lab",
+  "version": "1.0.0",
+  "description": "Halo lab development team's prettier config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halo-Lab/prettier-config-halo-lab.git"
+  },
+  "keywords": [
+    "prettier",
+    "config",
+    "halo",
+    "lab"
+  ],
+  "author": "Halo lab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Halo-Lab/prettier-config-halo-lab/issues"
+  },
+  "homepage": "https://github.com/Halo-Lab/prettier-config-halo-lab#readme"
+}
