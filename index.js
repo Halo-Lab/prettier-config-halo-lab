@@ -11,4 +11,6 @@ module.exports = {
   arrowParens: "always",
   endOfLine: "lf",
   printWidth: 85,
+  importOrder: ["^@/(.*)$", "^(?=.*\\.\/)(?:(?!scss|css).)*$", "\\w.*(css|scss)+.*"],
+  importOrderSeparation: true,
 };
