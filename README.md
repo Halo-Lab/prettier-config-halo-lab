@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-npm install --save-dev prettier prettier-config-halo-lab
+npm install --save-dev prettier prettier-config-halo-lab @trivago/prettier-plugin-sort-imports 
 ```
 
 ## Usage
