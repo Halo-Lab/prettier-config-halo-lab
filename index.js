@@ -22,6 +22,10 @@ module.exports = {
   // 1: Takes imports which begins with "@/" signs;
   // 2: Takes imports which begins with "./" and NOT ends with "css" or "scss";
   // 3: Takes imports which begins with "./" AND ends with "css" or "scss";
+  //
+  // !!Important!!
+  // In case of modifying this array, keep in mind that those
+  // regex escaped to be compatible with JSON.
   importOrder: ["^@/(.*)$", "^(?=.*\\.\/)(?:(?!scss|css).)*$", "^\\.\/.*(css|scss)"],
   importOrderSeparation: true,
 };
