@@ -1,4 +1,4 @@
-# Prettier config 
+# Halo lab prettier config 
 
 ## Installation
 ```bash
