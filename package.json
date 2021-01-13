@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-halo-lab",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Halo lab development team's prettier config",
   "main": "index.js",
   "scripts": {
