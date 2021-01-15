@@ -20,19 +20,19 @@ module.exports = {
   // considered as node modules imports.
   //
   // regex explanations from first to last:
-  // 1: Takes imports which begins with "@/" and NOT ends with one of: svg, png, jpg, jpeg, gif, webp;
-  // 2: Takes imports which begins with "./" and NOT ends with one of: scss, css, svg, png, jpg, jpeg, gif, webp;
-  // 3: Takes imports which begins with any symbol AND ends with one of: svg, png, jpg, jpeg, gif, webp;
-  // 4: Takes imports which begins with "./" AND ends with "css" or "scss";
+  // 1: Takes imports which begins with "@/" and NOT ends with one of: .svg, .png, .jpg, .jpeg, .gif, .webp;
+  // 2: Takes imports which begins with "./" and NOT ends with one of: .scss, .css, .svg, .png, .jpg, .jpeg, .gif, .webp;
+  // 3: Takes imports which begins with any symbol AND ends with one of: .svg, .png, .jpg, .jpeg, .gif, .webp;
+  // 4: Takes imports which begins with "./" or "../" AND ends with .css or .scss;
   //
   // !!Important!!
   // In case of modifying this array, keep in mind that those
   // regular expressions are escaped to be compatible with JSON.
   importOrder: [
-    "^@\/.*(?<!(svg|png|jpg|jpeg|gif|webp))$",
-    "^(?=.*\\.\/)(?:(?!scss|css|svg|png|jpg|jpeg|gif|webp).)*$",
-    "^.*(svg|png|jpg|jpeg|gif|webp)",
-    "^\\.\/.*(css|scss)",
+    "^@\/.*(?<!(\\.svg|\\.png|\\.jpg|\\.jpeg|\\.gif|\\.webp))$",
+    "^(?=.*\\.\/)(?:(?!\\.scss|\\.css|\\.svg|\\.png|\\.jpg|\\.jpeg|\\.gif|\\.webp).)*$",
+    "^.*(\\.svg|\\.png|\\.jpg|\\.jpeg|\\.gif|\\.webp)",
+    "^(\\.\/|\\.\\.\/).*(\\.css|\\.scss)",
   ],
   importOrderSeparation: true,
 };
